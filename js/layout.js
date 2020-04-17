@@ -55,6 +55,14 @@ Func.prototype.totop = function() {
 
 
 
+Func.prototype.showWechat= function() {
+  $('.shadle ').addClass('showme');
+}
+
+Func.prototype.closeWechat= function() {
+  $('.shadle').removeClass('showme');
+}
+
 Func.prototype.closemenu= function() {
   $('.sidebarmenu ').removeClass('open');
 }

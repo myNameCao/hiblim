@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/jquery.fullPage.css">
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/iconfont.css">
+<link rel="stylesheet" href="css/index.css">
 </head>
 <body id="home">
 
@@ -40,7 +41,7 @@
        <div class="textbox">
   	  	<div class="text1 wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">让海外创业与移民更简单</div>
   	  	<div class="text2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">互联网海外创业与移民综合服务平台</div>
-  	  	<a href="" class="sectionlink wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">访问小程序</a>
+  	  	<a  class="sectionlink wow fadeInUp  showWeachat" data-wow-duration="1s" data-wow-delay="0.3s">访问小程序</a>
 	</div>
 </div>
 
@@ -55,7 +56,7 @@
   	  		<span><font>●</font>实时进度更新</span>
   	  		
   	  	</div>
-  	  	<a href="http://www.yunfengsu.com.cn/" target="_blank" class="sectionlink wow fadeInUp animated" data-wow-duration="1.8s" data-wow-delay="0.3s">了解更多</a>
+  	  	<a target="_blank" class="sectionlink wow fadeInUp animated  showWeachat" data-wow-duration="1.8s" data-wow-delay="0.3s">了解更多</a>
   	  </div> 
     </div>
     <div class="section sectiocom1  section3">
@@ -68,8 +69,11 @@
   	  		<span><font>●</font>在线会计审计</span>
   	  		<span><font>●</font>标准服务收费</span>
   	  	</div>
-  	  	<a href="http://yzs.yunfengsu.com/" target="_blank" class="sectionlink wow fadeInUp animated" data-wow-duration="1.8s" data-wow-delay="0.3s">了解更多</a>
+  	  	<a  target="_blank" class="sectionlink wow fadeInUp animated  showWeachat" data-wow-duration="1.8s" data-wow-delay="0.3s">了解更多</a>
   	  </div> 
+    </div>
+    <div  class='shadle'>
+        <img   class='wechat' src="./images/wechat.png" alt="">
     </div>
 
 
@@ -90,6 +94,12 @@
 </script>
 <script type="text/javascript">
     $(function(){
+        $('.showWeachat').click(function(){
+            func.showWechat();
+        });
+        $('.shadle').click(function(){
+            func.closeWechat();
+        });
         $(document).click(function(){
             func.closemenu();
         });
