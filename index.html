@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>home</title>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/dotdotdot.js"></script>
+<script src="js/layout.js"></script>
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body id="home">
+
+<div class="sectionon">
+   <a href="javascript:void(0);" data-menuanchor="page1" class="active">
+   	<em class="e1"></em>
+   	<em class="e2">01</em>
+   </a>
+   <a href="javascript:void(0);" data-menuanchor="page2">
+   	<em class="e1"></em>
+   	<em class="e2">02</em>
+   </a>
+   <a href="javascript:void(0);" data-menuanchor="page3">
+   	<em class="e1"></em>
+   	<em class="e2">03</em>
+   </a>
+</div>
+
+<div class="zhongjian">Explore</div>
+<div class="copyright"><a href="http://www.beian.miit.gov.cn/">苏ICP备20013765号-1 </a> | 版权 © 2020 Nanjing Yunfengsu Technology Co., Ltd. | 电话: 4006-922-006 </div>
+
+
+<div id="page">
+    <div class="section section1">
+       <div class="textbox">
+  	  	<div class="text1 wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.3s">让海外创业与移民更简单</div>
+  	  	<div class="text2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">互联网海外创业与移民综合服务平台</div>
+  	  	<a href="" class="sectionlink wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">访问小程序</a>
+	</div>
+</div>
+
+    <div class="section sectiocom1 section2">
+       <div class="textbox">
+  	  	<div class="text1 wow fadeInDown animated" data-wow-duration="2s" data-wow-delay="0.3s">移民服务<br/>香港投资推广署推荐供应商</div>
+  	  	<div class="text2 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s">直联海外专家，平均十年以上移民服务经验</div>
+  	  	<div class="text3 wow fadeInUp animated" data-wow-duration="1.5s" data-wow-delay="0.3s">
+  	  		<span><font>●</font>智能移民评估</span>
+          <span><font>●</font>免费申请指南</span><br/>
+  	  		<span><font>●</font>流程公开透明</span>
+  	  		<span><font>●</font>实时进度更新</span>
+  	  		
+  	  	</div>
+  	  	<a href="http://www.yunfengsu.com.cn/" target="_blank" class="sectionlink wow fadeInUp animated" data-wow-duration="1.8s" data-wow-delay="0.3s">了解更多</a>
+  	  </div> 
+    </div>
+    <div class="section sectiocom1  section3">
+        <div class="textbox">
+  	  	<div class="text1 wow fadeInDown animated" data-wow-duration="2s" data-wow-delay="0.3s">创业服务<br/>本地专家帮您保持运营合规</div>
+  	  	<div class="text2 wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" >企业注册与合规运营一站式服务</div>
+  	  	<div class="text3 wow fadeInUp animated" data-wow-duration="1.5s" data-wow-delay="0.3s">
+  	  		<span><font>●</font>公司在线注册</span>
+  	  		<span><font>●</font>安全秘书系统</span><br/>
+  	  		<span><font>●</font>在线会计审计</span>
+  	  		<span><font>●</font>标准服务收费</span>
+  	  	</div>
+  	  	<a href="http://yzs.yunfengsu.com/" target="_blank" class="sectionlink wow fadeInUp animated" data-wow-duration="1.8s" data-wow-delay="0.3s">了解更多</a>
+  	  </div> 
+    </div>
+
+
+<script type="text/javascript">
+  $(function(){
+      $('#page').fullpage({
+         scrollBar: true,
+      	 anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+	       menu:'.sectionon',
+         afterRender: function(){
+            wow = new WOW({
+                animateClass: 'animated',
+            });
+           wow.init();
+        }
+      });
+  });
+</script>
+<script type="text/javascript">
+    $(function(){
+        $(document).click(function(){
+            func.closemenu();
+        });
+        $(".sidebarmenubox").click(function(event){
+            event.stopPropagation();
+        });
+        $(".menuopen").click(function(event){
+            event.stopPropagation();
+        });
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
